@@ -1,0 +1,29 @@
+<html>
+<head><title>Ranklist Example</title></head>
+<body>
+<h1>Ranklist Example</h1>
+
+<h2>Set a person's score to a new value:</h2>
+<form action="/setscore" method="GET">
+<p>Name: <input type="text" name="name" value="" /><br />
+Score: <input type="text" name="score" value="" /> (between 0 and 9999)<br />
+<input type="submit" value="Set Score" />
+</p>
+</form>
+
+<h2>Find out what the score of a person at a given rank is:</h2>
+<form action="/getrank" method="GET">
+<p>Rank: <input type="text" name="rank" value="" /> (0-based)<br />
+<input type="submit" value="Query Rank" />
+</p>
+</form>
+
+<h2>If someone had this score, what would his or her rank be?</h2>
+<form action="/getscore" method="GET">
+<p>Score: <input type="text" name="score" value="" /><br />
+<input type="submit" value="Query Score" />
+</p>
+</form>
+
+</body>
+</html>
